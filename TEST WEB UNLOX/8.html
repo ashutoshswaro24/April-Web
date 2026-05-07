@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Glow Interface</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0f0f0f;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .glow-button {
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ffffff;
+            background: #111;
+            border: 2px solid #00d2ff;
+            border-radius: 50px;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        
+        .glow-button:hover {
+            background: #00d2ff;
+            color: #000;
+            box-shadow: 0 0 20px #00d2ff, 
+                        0 0 40px #00d2ff, 
+                        0 0 60px #00d2ff;
+            transform: scale(1.05);
+        }
+
+        .glow-button:active {
+            transform: scale(0.95);
+            box-shadow: 0 0 10px #00d2ff;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="glow-button">Initialize</button>
+
+</body>
+</html>
