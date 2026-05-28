@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: changecolor;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        /* @keyframes changecolor{
+
+            from {background-color: red;}
+
+            to   {background-color: blue;}
+        } */
+
+
+
+         /* @keyframes changecolor{
+
+            0%  {background-color: red;}
+            
+            25% {background-color: blue;}
+
+            50% {background-color: gray;}
+
+            75% {background-color: yellow;}
+
+            100% {background-color: black;}
+        }  */
+
+        /* MoveBox */
+
+        @keyframes changecolor{
+            0% {transform: translateX(0);   background-color: red;  }
+            50% {transform: translateX(200px); background-color: beige;}
+            100% {transform: translateX(0); background-color: yellow;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <strong>Animation Effects Goes Back to Original State</strong>
+</body>
+</html>
